@@ -40,7 +40,7 @@ const config = {
   test: {
     mongo: {
       //uri: 'mongodb://localhost/spmapi-test',
-        uri: 'mongodb://0.0.0.0/spmapi-test',
+        uri: 'mongodb://172.17.0.1/spmapi-test',
       //uri: 'mongodb://172.19.0.2:27017/spmapi-test',
       options: {
         debug: false
@@ -49,7 +49,7 @@ const config = {
   },
   development: {
     mongo: {
-          uri: 'mongodb://0.0.0.0/spmapi-dev',
+          uri: 'mongodb://172.17.0.1/spmapi-dev',
        // uri: 'mongodb://localhost/spmapi-dev',
         //uri: 'mongodb://172.19.0.2:27017/spmapi-dev',
       options: {
@@ -61,7 +61,7 @@ const config = {
     ip: process.env.IP || undefined,
     port: process.env.PORT || 8080,
     mongo: {
-        uri: process.env.MONGODB_URI || 'mongodb://0.0.0.0/spmapi'
+        uri: process.env.MONGODB_URI || 'mongodb://172.17.0.1/spmapi'
       //uri: process.env.MONGODB_URI || 'mongodb://localhost/spmapi'
       //uri: process.env.MONGODB_URI || 'mongodb://172.19.0.2:27017/spmapi'
     }
